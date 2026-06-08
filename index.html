@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch Tracker</h1>
+        
+        <div class="tracker-section">
+            <!-- Stopwatch Display -->
+            <div class="stopwatch-display">
+                <div class="time-display" id="timeDisplay">00:00:00</div>
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-start">Start</button>
+                    <button id="stopBtn" class="btn btn-stop" disabled>Stop</button>
+                    <button id="resetBtn" class="btn btn-reset">Reset</button>
+                </div>
+            </div>
+
+            <!-- Counter Display -->
+            <div class="counter-section">
+                <h2>Cycles Completed</h2>
+                <div class="counter-display" id="counterDisplay">0</div>
+                <p class="counter-info">The counter increases by 1 each time you complete a start-stop cycle</p>
+            </div>
+        </div>
+
+        <!-- Session History -->
+        <div class="history-section">
+            <h2>Cycle History</h2>
+            <ul id="historyList" class="history-list">
+                <li class="empty-state">No cycles completed yet</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
